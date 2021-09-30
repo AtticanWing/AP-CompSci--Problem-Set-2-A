@@ -38,7 +38,7 @@ class Calculator {
         
         //Quadratic
         System.out.println("QUADRATIC FORMULA"); //print output of solutions
-        System.out.println("The solutions for " + (int)a + "x^2 + " + (int)b + "x + " + (int)c + " are " + quadraticPlus(a, b, c) + " and " + quadraticMinus(a,b,c) + ".");
+        System.out.println("The solutions for " + (int)a + "x^2 + " + (int)b + "x + " + (int)c + " are " + quadraticMinus(a, b, c) + " and " + quadraticPlus(a,b,c) + ".");
         System.out.println();
         
         //Slope
@@ -62,35 +62,42 @@ class Calculator {
         System.out.println();
     }
 
-    double quadraticPlus(double a, double b, double c) {
+    //Quadratic non-void method #1 (minus discriminant)
+    double quadraticMinus(double a, double b, double c) {
         i = (b*b)-(4*a*c); //calculate inside of square root
         i = Math.sqrt(i);  //calculate output of square root
         return (-b-i)/(2*a); //calculate solution 1
     }
     
-    double quadraticMinus(double a, double b, double c) {
+    //Quadratic non-void method #1 (plus discriminant)
+    double quadraticPlus(double a, double b, double c) {
         i = (b*b)-(4*a*c); //calculate inside of square root
         i = Math.sqrt(i);  //calculate output of square root
         return (-b+i)/(2*a); //calculate solution 2
     }
     
+    //Slope non-void method
     double slope(double x1, double y1, double x2, double y2) {
         return (y2 - y1)/(x2 - x1); //calculate slope
     }
     
+    //Midpoint X-value non-void method
     double midpointX(double x1, double x2) {       
         return (x1+x2)/2; //calculate x value of midpoint
     }
     
+    //Midpoint Y-value non-void method
     double midpointY(double y1, double y2) {
         return (y1+y2)/2; //calculate y value of midpoint
     }
     
+    //Sum of arithmetic series non-void method
     double arithmeticSum(double Ka, double a1, double ak, double inc) {
         ak = a1 + (inc*(Ka-1)); //calculate value of last term in the arith. series
         return (Ka/2)*(a1+ak); //calculate the sum of the arith. series
     }
     
+    //Sum of geometric series non-void method
     double geometricSum(double r, double Kg, double g1) {
         return g1*((1-(Math.pow(r,Kg)))/(1-r)); //calculate sum of geo. series
     }
