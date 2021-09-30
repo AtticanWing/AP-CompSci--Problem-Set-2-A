@@ -1,0 +1,21 @@
+#BlueJ class context
+comment0.target=Calculator
+comment1.params=
+comment1.target=Calculator()
+comment2.params=
+comment2.target=void\ display()
+comment3.params=a\ b\ c
+comment3.target=double\ quadraticPlus(double,\ double,\ double)
+comment4.params=a\ b\ c
+comment4.target=double\ quadraticMinus(double,\ double,\ double)
+comment5.params=x1\ y1\ x2\ y2
+comment5.target=double\ slope(double,\ double,\ double,\ double)
+comment6.params=x1\ x2
+comment6.target=double\ midpointX(double,\ double)
+comment7.params=y1\ y2
+comment7.target=double\ midpointY(double,\ double)
+comment8.params=Ka\ a1\ ak\ inc
+comment8.target=double\ arithmeticSum(double,\ double,\ double,\ double)
+comment9.params=r\ Kg\ g1
+comment9.target=double\ geometricSum(double,\ double,\ double)
+numComments=10
